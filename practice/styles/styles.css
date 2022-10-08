@@ -1,0 +1,51 @@
+.main-para {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+#active {
+    background-color: white;
+    color: steelblue;
+}
+
+* {
+    border: 2px solid blue;
+}
+
+img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    }
+
+p {
+    width: 100%;
+}
+
+a {
+    font-size: 1.5em;
+}
+
+a:hover {
+    background-color: white;
+    color: steelblue;
+}
+
+a: {
+    background-color: rgb(172, 76, 76);
+    color: rgb(37, 216, 207);
+}
+
+body {
+    text-align: center;
+}
+
+nav, footer {
+    text-align: left;
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+}
