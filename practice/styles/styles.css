@@ -34,11 +34,6 @@ a:hover {
     color: steelblue;
 }
 
-a: {
-    background-color: rgb(172, 76, 76);
-    color: rgb(37, 216, 207);
-}
-
 body {
     text-align: center;
 }
