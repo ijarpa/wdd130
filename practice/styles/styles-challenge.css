@@ -1,0 +1,21 @@
+#content {
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: 1600px;
+    background-color: grey;
+  }
+  
+#banner-img {
+    width: 100%;
+}
+
+main {
+    text-align: center;
+}
+
+main img {
+    width: 20%;
+    border-radius: 50%;
+    border: 20px solid rgb(68, 68, 68);
+    margin: 50px 60px;
+}

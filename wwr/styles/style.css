@@ -1,5 +1,10 @@
-body {
-    background-color: #fcfbfb;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@100;300&display=swap');
+
+:root {
+    --body-font: "Montserrat";
+    --paragraph-font: Lato;
+    --paragraph-font-2: Helvetica, sans-serif;
 }
 
 #content {
@@ -7,35 +12,64 @@ body {
     margin: 0 auto;
 }
 
+body {
+    background-color: #fcfbfb;
+    font-family: var(--body-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+header {
+    background-color: #dcf0ff;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
 nav a {
     color: #35494E;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
     background-color: #35494E;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 
 .home-title {
+    font-family: var(--body-font);
+    font-size: 3em;
     color: #35494E;
+    margin: 10px;
+}
+
+.button-box {
+    margin: 30px;
 }
 
 .book, .join {
-    background-color: #dcf0ff;
+    background-color: #BEE9E8;
     color: #35494E;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
     background-color: #35494E;
     color: white;
     text-decoration: none;
-}
-
-header {
-    background-color: #dcf0ff;
 }
 
 #hero-msg {
@@ -46,34 +80,63 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
+.card-img {
+    border: 10px solid #35494E;
+}
+
 #background {
-    height: 725px;
     background-color: #BEE9E8;
-}             
+    height: 725px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}     
+
+.mountains {
+    margin: 50px 0
+}
 
 #hero-img {
     width: 100%;
 }
 
 .msg {
-    background-color: #dcf0ff;
+    background-color: #ffffff;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
+    font-family: var(--paragraph-font);
+    font-size: 2em;
     color: #35494E;
 }
 
 .msg p {
+    font-family: var(--paragraph-font-2);
+    font-size: 2em;
     color: #35494E;
+    padding-bottom: 15px;
 }
 
 footer {
     background-color: #dcf0ff;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
     background-color: #dcf0ff;
     text-decoration: none;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
 
 footer p {
@@ -86,4 +149,5 @@ footer p a:hover {
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
