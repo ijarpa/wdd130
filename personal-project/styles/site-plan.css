@@ -16,13 +16,13 @@ Fonts are separated by a | */
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #86c4ba;  /* headlines on a white background */ 
-  --headline-color-on-color: #f3f3f3; /* headlines on a colored background */ 
+  --headline-color-on-color: #050A09; /* headlines on a colored background */ 
   --paragraph-color-on-white: #86c4ba; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #f3f3f3; /* paragraph text on a colored background */ 
+  --paragraph-color-on-color: #050A09; /* paragraph text on a colored background */ 
   --paragraph-background-color: #86c4ba  ;
-  --nav-link-color: #a1a0a0;
+  --nav-link-color: #412A34;
   --nav-background-color: #f5dbdd;
-  --nav-hover-link-color: #f3f3f3;
+  --nav-hover-link-color: #050A09;
   --nav-hover-background-color: #86c4ba;
 }
 
@@ -30,7 +30,7 @@ Fonts are separated by a | */
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
 body {
-    background-color: #f9f9f9f9;
+  background-color: white;
   max-width: 1200px;
   margin: 0 auto;
   padding: 4em;
