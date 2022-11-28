@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Raleway:wght@200&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #86c4ba   ;
+  --secondary-color: #f5dbdd ;
+  --accent1-color: #f3f3f3;
+  --accent2-color: #cedebd;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "Raleway";
+  --paragraph-font: Montserrat, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #02221c;  /* headlines on a white background */ 
+  --headline-color-on-color: #21695c; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #86c4ba; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #02221c; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #86c4ba  ;
+  --nav-link-color: #412A34;
+  --nav-background-color: #f5dbdd;
+  --nav-hover-link-color: #02221c;
+  --nav-hover-background-color: #86c4ba;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2/3;
+    font-size: 1.5em;
+    font-family: var(--heading-font);
+    font-weight: 500;
+}
+
+nav a {
+    background-color: var(--nav-background-color);
+    width: 150px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 15px 10px 0;
+}
+
+nav a:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+
+#logo_link {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+.logo {
+    width: 30%;
+}
+
+h1, h2, a {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+a:link, a:hover, a:visited {
+    text-decoration: none;
+
+}
+
+.prod-link:hover {
+    transform: scale(1.05);
+}
+
+#products {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.prod-box {
+    border: 1px solid #f1f1f1;
+}
+
+.product-1 {
+    padding-right: 15px;
+}
+
+.product-2 {
+    padding-right: 15px;
+}
+
+.product-3 {
+    padding-right: 15px;
+}
+
+.prod-img {
+    margin-top: 20px;
+    width: 70%;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid;
+}
+
+.prod-img:hover {
+    opacity: .8;
+    transform: scale(1.1);
+    transition: transform .3s;
+}
+
+#weekly-product {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    text-align: center;
+    height: 700px;
+}
+
+.weekly-img {
+    z-index: 1;
+    height: 700px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 5px solid var(--nav-hover-background-color);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.msg {
+    margin-left: 50px;
+    padding: 0 50px;
+    background-color: #F9F9F9;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    height: 700px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.msg h2 {
+    font-size: 2.5em;
+}
+.msg p {
+    margin-top: 100px;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: var(--nav-background-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    height: 100px;
+    padding: 50px;
+    font-size: 1.2em;
+}
+
+.copy-right {
+    grid-column: 2/3;
+}
+
+.site-plan {
+    grid-column: 3/4;
+}
+
+.contact {
+    grid-column: 4/5;
+}
+
+.logo-social {
+    grid-column: 6/7;
+}
+
+/* PRODUCTS HTML */
+
+#products-list {
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 8fr;
+    border: 1px solid #f1f1f1;
+}
+
+.item-img {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid;
+}
+
+.img-1{
+    padding: 15px;
+    grid-column: 1/2;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.prod-1-text {
+    grid-column: 2/3;
+    padding-left: 20px;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+/* ABOUT US */
+
+#title {
+    text-align: center;
+}
+
+#feedback {
+    text-align: center;
+    list-style-type: none;
+    font-family: var(--paragraph-font);
+    font-size: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 900px) {
+    #hero, #hero-box{
+        display: block;
+        height: auto;
+    }
+    header{
+        height: 200px;
+        font-size: 1em;
+    }
+
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 100px;
+        text-align: center;
+    }
+    #hero-img {
+        max-width: 500px;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .product-1, .product-2, .product-3 { 
+        flex-direction: column;
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    
+    .weekly-img, .msg {
+        height: 20%;
+        display: block;
+        margin: 0 auto;
+        font-size: 0.5em;
+    }
+
+    .msg {
+        margin-left: 50px;
+        padding: 0 50px;
+        background-color: white;
+        grid-column: 2/4;
+        grid-row: 1/2;
+        box-shadow: 5px 5px 10px white;
+    }
+
+    .msg p {
+        margin: 0 auto;
+        font-size: 2.5em;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+}
+       
