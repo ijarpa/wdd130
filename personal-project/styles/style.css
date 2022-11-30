@@ -239,7 +239,7 @@ ul {
 
 /* RESPONSIVE DESIGN */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1150px) {
     #hero, #hero-box{
         display: block;
         height: auto;
@@ -251,17 +251,19 @@ ul {
 
     nav, footer {
         flex-direction: column;
+        align-items: center;
     }
     nav a {
         display: block;
         padding: 15px;
+        margin: 5px auto;
     }
     #hero {
         margin-top: 100px;
         text-align: center;
     }
     #hero-img {
-        max-width: 500px;
+        max-width: 100%;
     }
     #hero-msg h4 {
         display: none;
@@ -282,26 +284,35 @@ ul {
     .weekly-img, .msg {
         height: 20%;
         display: block;
-        margin: 0 auto;
+        margin: 15px auto;
         font-size: 0.5em;
     }
 
+    #weekly-product {
+        margin: 30px auto;
+        height: 500px;
+    }
+
     .msg {
-        margin-left: 50px;
-        padding: 0 50px;
         background-color: white;
         grid-column: 2/4;
         grid-row: 1/2;
         box-shadow: 5px 5px 10px white;
+        padding: 20px;
     }
 
     .msg p {
         margin: 0 auto;
-        font-size: 2.5em;
+        font-size: 1.8em;
     }
 
     footer {
         margin-top: 25px;
     }
+
+    #contact-us {
+        margin-top: 150px;
+    }
+
 }
        
