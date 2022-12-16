@@ -27,7 +27,6 @@ body {
     background-color: white
 }
 #content {
-    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -36,12 +35,16 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-#hero {
-    text-align: center;
+#hero-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
-#hero-img {
-    max-width: 1600px;
+#hero-img-2 {
+    width: 100%;
+    height: auto;
 }
 
 .topline {
@@ -63,8 +66,8 @@ header {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1600px;
-  position: relative;
+    width: 100%;
+    position: relative;
 }
 
 /* Hide the images by default */
@@ -190,6 +193,11 @@ p {
 a:link, a:hover, a:visited {
     text-decoration: none;
 
+}
+
+main {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .prod-link {
